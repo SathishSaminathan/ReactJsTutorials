@@ -24,8 +24,9 @@ import "./css/styles.css";
  */
 
 class Header extends Component {
-  inputChangeHandler=(e)=> {
-    // console.log(e.target.value);
+  inputChangeHandler=()=> {
+      debugger
+      console.log(this); //arrow functions are used to get the "this" value of the current environmen 
     console.log('hey')
   }
 
