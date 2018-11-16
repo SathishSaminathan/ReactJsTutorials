@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import "./css/styles.css";
+
 // const _getDate = () => {
 //   const date = new Date();
 //   return date.getHours();
@@ -22,9 +24,21 @@ import React, { Component } from "react";
  */
 class Header extends Component {
   render() {
+    /** ONE TYPE OF STYLING
+     * const styles = {
+        header:{
+            background:'#03a9f4'
+        },
+        logo:{
+            color:'#fff',
+            fontFamily:'Anton',
+            textAlign:'center'
+        }
+    };
+     */
     return (
       <header>
-        <div>LOGO</div>
+        <div className="logo">LOGO</div>
         <input />
       </header>
     );
