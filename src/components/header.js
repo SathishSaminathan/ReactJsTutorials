@@ -22,7 +22,14 @@ import "./css/styles.css";
 /**
  * class based components are used to get the values like props states from the rest components
  */
+
 class Header extends Component {
+  inputChangeHandler=()=> {
+      debugger
+      console.log(this); //arrow functions are used to get the "this" value of the current environmen 
+    console.log('hey')
+  }
+
   render() {
     /** ONE TYPE OF STYLING
      * const styles = {
@@ -39,7 +46,7 @@ class Header extends Component {
     return (
       <header>
         <div className="logo">LOGO</div>
-        <input />
+        <input type="text" onChange={this.inputChangeHandler} />
       </header>
     );
   }
