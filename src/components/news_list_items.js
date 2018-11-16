@@ -18,6 +18,7 @@ const NewsItem = props => {
   let news_item = css({
     padding: "20px",
     boxSizing: "border-box",
+    borderBottom:"1px solid grey",
     ":hover": {
       color: "red"
     },
